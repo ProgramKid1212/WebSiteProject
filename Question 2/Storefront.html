@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tim's Computers</title>
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+	
+		body {
+			margin: 0;
+			background-color: #96C2DB;
+			padding: 10px;
+		}
+	
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+			font-family: courier, monospace;
+		}
+		
+		.spacing {
+			padding: 20px;
+			background-color: #333;
+			color: #333;
+		}
+		
+		.leftcolumn {
+			float: left;
+			width: 18%;
+			padding: 0px;
+
+		}
+		
+		.rightcolumn {
+			float: right;
+			width: 25%;
+			padding-left: 15px;
+			padding-bottom: 35px;
+
+			margin-right: 10px;
+		}
+		
+		.box1 {
+			padding: 20px;
+			background-color: #E5EDF1;
+			margin: 20px;
+			margin-top: 20px;
+			border-style: solid;
+			border-width: 0.5px;
+		}
+		
+		.box2 {
+			padding: 10px;
+			background-color: #E5EDF1;
+			margin-top: 20px;
+		}
+		
+		.img {
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+		
+		.purchase {
+			background-color: #2aeb15;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		.footer {
+			padding: 20px;
+			background-color: #333;
+			margin-top: 20px;
+			color: white;
+		}
+		
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		@media screen and (max-width:600px) {
+			.leftcolumn, .rightcolumn {
+				width: 100%;
+				padding: 0;
+			}
+		}
+		
+		img {
+			width: 150px;
+			height: 150px;
+		}
+		
+		.promotion {
+			padding: 10px;
+			margin-top: 20px;
+			font-family: arial black;
+			font-size: 40px;
+			color: red;
+			text-align: center;
+			background-color: #345eeb;
+		}
+		
+		del {
+			color: red;
+		}
+		
+		b {
+			color: red;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>TIM'S COMPUTER STORE</h1>
+	</div>
+
+	<div class="spacing">
+		hello;
+	</div>
+	
+	<h1>Graphics Cards</h1>
+	
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="ASUS RTX 4070 Ti.jpg">
+				<h2><b>(NEW!)</b> ASUS GeForce RTX 4070 Ti</h2>
+				<p>R 21,999</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="Zotac RTX 4070 Ti.jpg">
+				<h2>Zotac GeForce RTX 4070 Ti</h2>
+				<p><del>R22,999</del> R19,999</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="XFX Radeon RX 7900 XTX.jpg">
+				<h2>XFX Radeon RX 7900 XTX</h2>
+				<p>R22,499</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="XFX Radeon RX 6600.jpg">
+				<h2><b>(NEW!)</b> XFX Radeon RX 6600</h2>
+				<p>R5,499</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+	
+		<div class="rightcolumn">
+			<div class="promotion">
+				<p>ALL RTX 40 SERIES GRAPHICS CARDS ARE 15% ON SALE. GRAB WHILE STOCKS LAST!</p>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	<h1>Processors/CPUs</h1>
+	
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="Intel i9-13900K 5.80GHz.jpg">
+				<h2>Intel i9-13900K 5.80GHz</h2>
+				<p><del>R14,999</del> R12,799</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="Intel i7-13700K 5.40GHz.jpg">
+				<h2>Intel i7-13700K 5.80GHz</h2>
+				<p><del>R10,499</del> R8,999</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="Ryzen 7 7800X3D 5.0GHz.jpg">
+				<h2>Ryzen 7 7800X3D 5.0GHz</h2>
+				<p>R9,999</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="leftcolumn">
+			<div class="box1">
+				<img src="Ryzen 5 5600G 6-Core 3.9GHz.jpg">
+				<h2>Ryzen 5 5600G 6-Core 3.9GHz</h2>
+				<p>R2,999</p>
+				<div class="purchase">Add To Cart</div>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="box2">
+				<p class="promotion">This is the column on the right.</p>
+			</div>
+		</div>
+	
+	</div>
+
+	
+	<div class="footer">Black Friday deals will have a 1 day delivery delay due to high demand.
+	</div>
+	
+</body>
+</html>
